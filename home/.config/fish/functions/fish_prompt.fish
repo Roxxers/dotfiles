@@ -1,0 +1,1 @@
+/home/roxie/.local/share/omf/themes/default/fish_prompt.fish
