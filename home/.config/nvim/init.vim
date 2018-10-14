@@ -13,6 +13,15 @@ Plugin 'VundleVim/Vundle.vim'
 "Plugin 'dikiaap/minimalist'
 Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-fugitive'
+Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'junegunn/goyo.vim'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'dhruvasagar/vim-table-mode'
+Plugin 'Valloric/YouCompleteMe'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -32,5 +41,5 @@ filetype plugin indent on    " required
 set t_Co=256
 syntax on
 "colorscheme minimalist
-
+let g:better_whitespace_enabled=1
 

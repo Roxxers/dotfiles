@@ -1,6 +1,6 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/home/roxie'
-let g:netrw_dirhist_2='/home/roxie/.vim'
-let g:netrw_dirhist_3='/home/roxie'
-let g:netrw_dirhist_4='/home/roxie/.homesick/repos/dotfiles'
+let g:netrw_dirhist_1='/home/roxie/PycharmProjects/roxbot'
+let g:netrw_dirhist_2='/home/roxie'
+let g:netrw_dirhist_3='/home/roxie/.vim/bundle/YouCompleteMe'
+let g:netrw_dirhist_4='/home/roxie'
