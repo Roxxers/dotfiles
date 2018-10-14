@@ -1,13 +1,12 @@
-#
-# ~/.bashrc
-#
-
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
+#!/usr/bin/env bash
 
 alias ls='ls --color=auto'
-PS1='[\u@\h \W]\$ '
-export EDITOR="nano"
+
+# Easier navigation: .., ..., ...., .....
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
 
 # Better version of cat. Has search and highlighting.
 alias cat='bat'
@@ -20,3 +19,6 @@ alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
 
 # Bind tldr to a better alias for me cause I can never spell it. Conflicts with fish's help but \help exits so doesn't matter
 alias help="tldr"
+
+# Refresh fish (Atm this is a function soon to be depreciated so its just here so I can keep it)
+alias refresh="fish"
