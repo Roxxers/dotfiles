@@ -39,7 +39,12 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 set t_Co=256
-syntax on
-"colorscheme minimalist
-let g:better_whitespace_enabled=1
+set nowrap
+set ts=2 sw=2 noet
 
+syntax on
+
+let g:better_whitespace_enabled=1
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_start_level = 2
+let g:indent_guides_guide_size = 1
