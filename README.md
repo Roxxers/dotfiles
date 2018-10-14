@@ -1,6 +1,6 @@
 # Roxie's Dotfiles
 
-Just here cause I need em. Don't mind me. These dotfiles are powered by [Homesick](https://github.com/technicalpickles/homesick). Too lazy for managing it myself.
+Dotfiles mostly centered around fish.  These dotfiles are powered by [Homesick](https://github.com/technicalpickles/homesick). Too lazy for managing it myself.
 
 # Requirements
 
@@ -16,6 +16,7 @@ homesick (for managing the dotfiles themselves)
 ncdu
 omf (for prompt to look pretty)
 tldr
+pywal
 ```
 
 I use Gnome as a DE and wallpaper.png is loaded automatically as my wallpaper; hence its inclusion. 
