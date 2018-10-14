@@ -22,3 +22,9 @@ alias help="tldr"
 
 # Refresh fish (Atm this is a function soon to be depreciated so its just here so I can keep it)
 alias refresh="fish"
+
+# Refresh Wal back to the previous colour scheme
+alias wal-refresh="command cat ~/.cache/wal/sequences; clear"
+
+# Set terminal colour scheme to wallpaper
+alias wal-set="wal -i ~/wallpaper.png"

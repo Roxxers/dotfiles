@@ -6,16 +6,13 @@ Dotfiles mostly centered around fish.  These dotfiles are powered by [Homesick](
 
 My dotfiles assume you have quite a few programs installed and have added your `.local/bin` to `$PATH` using fish;s universal variables. `set -U fish_user_paths /home/USER/.local/bin $fish_user_paths`
 
-Programs:
+The following are required as they are referenced outside of aliases.fish:
 ```
-bat
 diff-so-fancy
 fish
-fzf
 homesick (for managing the dotfiles themselves)
-ncdu
+neovim
 omf (for prompt to look pretty)
-tldr
 pywal
 ```
 
