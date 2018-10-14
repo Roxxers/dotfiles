@@ -11,7 +11,7 @@ The following are required as they are referenced outside of aliases.fish:
 diff-so-fancy
 fish
 homesick (for managing the dotfiles themselves)
-neovim
+neovim (with Vundle)
 omf (for prompt to look pretty)
 pywal
 ```
