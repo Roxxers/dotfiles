@@ -10,7 +10,7 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'dikiaap/minimalist'
+"Plugin 'dikiaap/minimalist'
 Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-fugitive'
 
@@ -31,6 +31,6 @@ filetype plugin indent on    " required
 
 set t_Co=256
 syntax on
-colorscheme minimalist
+"colorscheme minimalist
 
 
