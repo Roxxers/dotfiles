@@ -22,4 +22,5 @@ I use Gnome as a DE and wallpaper.png is loaded automatically as my wallpaper; h
 I have pick 'n' mixed many different dotfile repos instead of just forking one. This is because I use fish and it's harder to find fish compatible dotfiles. So a lot of shell changes have to be edited by me. I'll try and credit all I can below. 
 
 [mathiasbynens](https://github.com/mathiasbynens) for their [dotfiles](https://github.com/mathiasbynens/dotfiles)
+
 [holman](https://github.com/holman/) for a lot of scripts in their [dotfiles](https://github.com/holman/dotfiles)
