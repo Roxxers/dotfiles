@@ -27,4 +27,4 @@ alias refresh="fish"
 alias wal-refresh="command cat ~/.cache/wal/sequences; clear"
 
 # Set terminal colour scheme to wallpaper
-alias wal-set="wal -i ~/wallpaper.png"
+alias wal-set="wal -c -i ~/wallpaper.png"
