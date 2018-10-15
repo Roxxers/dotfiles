@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-DIR="$HOME/.homesick/repos/dotfiles/home/.config"
+DIR="$HOME/.config"
 
 dconf dump /org/gnome/ > "$DIR/gnome-settings"
