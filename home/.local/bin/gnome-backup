@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+HOMESICK_DIR="$HOME/.homesick/repos/dotfiles"
+
+cd $HOMESICK_DIR
+gnome-settings-dump
+# It's okay to do all of this because if nothing changes, then it won't get pushed and its all ok
+git add "$HOMESICK_DIR/home/.config/gnome-settings"
+git commit -m "automatic backup of gnome-settings"
+git push
