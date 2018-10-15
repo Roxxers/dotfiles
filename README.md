@@ -13,10 +13,11 @@ fish
 homesick (for managing the dotfiles themselves)
 neovim (with Vundle)
 omf (for prompt to look pretty)
+polybar
 pywal
 ```
 
-I use Gnome as a DE and wallpaper.png is loaded automatically as my wallpaper; hence its inclusion. 
+Gnome has an extention that removes the top bar. That needs to be enabled for polybar to work properly. `wallpaper.png` is loaded automatically as my wallpaper; hence its inclusion. 
 
 # Thanks
 I have pick 'n' mixed many different dotfile repos instead of just forking one. This is because I use fish and it's harder to find fish compatible dotfiles. So a lot of shell changes have to be edited by me. I'll try and credit all I can below. 
