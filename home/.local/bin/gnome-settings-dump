@@ -1,0 +1,5 @@
+#!/bin/sh
+
+DIR="~/.homesick/repos/dotfiles/home/.config/gnome-settings"
+
+dconf dump /org/gnome > $DIR

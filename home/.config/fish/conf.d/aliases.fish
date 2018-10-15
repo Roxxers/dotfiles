@@ -1,6 +1,8 @@
-#!/usr/bin/env bash
+# Allow aliases to be sudu'd
+alias sudo="sudo "
 
 alias ls='ls --color=auto'
+alias lsa="ls -a"
 
 # Easier navigation: .., ..., ...., .....
 alias ..="cd .."
