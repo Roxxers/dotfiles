@@ -1,1 +1,1 @@
-exec gnome-session
+exec startkde

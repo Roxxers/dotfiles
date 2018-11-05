@@ -62,13 +62,13 @@ font-5 = Weather Icons:size=12;1
 
 modules-left = cpu memory eth temperature
 modules-center = date openweathermap-fullfeatured
-modules-right = pulseaudio spotify powermenu
+modules-right = pulseaudio powermenu
 
 tray-position = left
 tray-padding = 2
-;tray-transparent = true
+tray-transparent = true
 ;tray-background = #0063ff
-
+h
 ;wm-restack = bspwm
 ;wm-restack = i3
 
