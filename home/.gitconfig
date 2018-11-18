@@ -5,5 +5,5 @@
        diff = diff-so-fancy | less --tabs=1,5 -RFX
        show = diff-so-fancy | less --tabs=1,5 -RFX
 
-[credential]
-	helper = /usr/share/git/credential/gnome-keyring/git-credential-gnome-keyring
+
+
