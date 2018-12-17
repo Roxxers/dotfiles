@@ -1,8 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/home/roxie/PycharmProjects/roxbot'
-let g:netrw_dirhist_2='/home/roxie'
-let g:netrw_dirhist_3='/home/roxie/.vim/bundle/YouCompleteMe'
-let g:netrw_dirhist_4='/home/roxie'
-let g:netrw_dirhist_5='/var/lib/AccountsService/users'
-let g:netrw_dirhist_6='/home/roxie/.homesick/repos/dotfiles/.git'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/home/roxie/.homesick/repos/dotfiles/home/.oh-my-zsh/custom/themes'
