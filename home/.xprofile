@@ -1,0 +1,2 @@
+# Set PATH
+export PATH=$HOME/.local/bin:$PATH
