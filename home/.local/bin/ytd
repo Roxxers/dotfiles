@@ -1,3 +1,4 @@
 #!/bin/sh
 
-youtube-dl $0 -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 --add-metadata --xattrs --write-sub --sub-format=srt --sub-lang=en --embed-thumbnail -o '%(title)s.%(ext)s'
+youtube-dl $1 -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 --add-metadata --xattrs 
+--write-sub --sub-format=srt --sub-lang=en --embed-thumbnail -o '%(title)s.%(ext)s'
