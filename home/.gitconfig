@@ -1,7 +1,7 @@
 [user]
 	name = Roxie Gibson
 	email = me@roxxers.xyz
-	signingkey = EE123F4D
+	signingKey = 49B0A560F2C05D0A4460B6935D0140EDEE123F4D
 [pager]
        diff = diff-so-fancy | less --tabs=1,5 -RFX
        show = diff-so-fancy | less --tabs=1,5 -RFX
@@ -12,3 +12,5 @@
 	gpgsign = true
 [gpg]
 	program = gpg
+[tag]
+	forceSignAnnotated = true
