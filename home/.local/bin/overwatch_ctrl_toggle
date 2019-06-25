@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+while getopts 'ox' flag; do
+  case "${flag}" in
+    o) xmodmap -e "keycode 37 = Control_R" && xmodmap -e "keycode 105 = Control_L" && echo "Changed Ctrl_L to Ctrl_R";;
+    x) xmodmap -e "keycode 37 = Control_L" && xmodmap -e "keycode 105 = Control_R" && echo "Changed Ctrl_R to Ctrl_L";;
+  esac
+done

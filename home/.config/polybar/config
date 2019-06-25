@@ -61,8 +61,13 @@ modules-center =
 modules-right = filesystem updates-arch-combined pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
 
 tray-position = right
-tray-padding = 2
-;tray-background = #0063ff
+tray-detached = false
+tray-maxsize = 20
+tray-background = ${colors.background}
+tray-offset-x = 0
+tray-offset-y = 0
+tray-padding = 0
+tray-scale = 1.0
 
 ;wm-restack = bspwm
 ;wm-restack = i3
