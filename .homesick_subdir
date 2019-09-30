@@ -1,3 +1,4 @@
 .config
 .local/bin
 .oh-my-zsh/custom
+.config/VSCodium/User
