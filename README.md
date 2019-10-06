@@ -1,22 +1,33 @@
 # Roxie's Dotfiles
 
-Dotfiles mostly centered around fish.  These dotfiles are powered by [Homesick](https://github.com/technicalpickles/homesick). Too lazy for managing it myself.
+Dotfiles mostly centered around zsh.  These dotfiles are powered by [Homesick](https://github.com/technicalpickles/homesick). Too lazy for managing it myself.
 
 ## Explination
 
-This dotfiles is very messy. It has some older files I don't use anymore but may need in the future. The main highlights for what I use daily atm are VSCodium settings, zsh and oh-my-zsh, and nvim. There is also a collection of useful bin files.
+This repo contains the standard config files I use. The main highlights are my kitty term config files, VSCodium settings, zsh and oh-my-zsh, neofetch, and nvim. There is also a collection of useful bin files.
 
-## Requirements for zsh
+## Nice to have's
 
-The following are references in `aliases.zsh` and therefore need to be installed if you are using my zsh files.
+The following are references in `aliases.zsh`.
 
 ```sh
 bat
 tldr
 ncdu
 diff-so-fancy
-homesick (for managing the dotfiles themselves)
+kitty
 pywal
+```
+
+For ranger, the followinng programs are optional requirements file previews
+
+```sh
+lynx
+elinks
+highlight
+atool
+mediainfo
+python-pdftotext # In the AUR
 ```
 
 You also need to recursively pull this repo as there are submodules for my omz plugins
