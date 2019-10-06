@@ -128,5 +128,9 @@
     ],
     "workbench.colorTheme": "Monokai Sweet Darker",
     "docker.dockerComposeDetached": false,
-    "docker.dockerComposeBuild": false
+    "docker.dockerComposeBuild": false,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "docker.containers.label": "ContainerName"
 }

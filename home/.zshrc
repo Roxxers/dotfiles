@@ -73,4 +73,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=white'
 
 # User configuration
 
-
+autoload -Uz compinit
+compinit
+# Completion for kitty
+kitty + complete setup zsh | source /dev/stdin
