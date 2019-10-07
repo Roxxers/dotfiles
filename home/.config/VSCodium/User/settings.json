@@ -132,5 +132,8 @@
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "docker.containers.label": "ContainerName"
+    "docker.containers.label": "ContainerName",
+    "terminal.external.linuxExec": "xterm-kitty",
+    "terminal.integrated.fontFamily": "inconsolata nerd font",
+    "terminal.integrated.fontSize": 15
 }

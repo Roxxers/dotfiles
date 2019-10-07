@@ -2,7 +2,9 @@
   export ZSH="/home/roxie/.oh-my-zsh"
 
 # Themes
-ZSH_THEME="roxiepeabody"
+#ZSH_THEME="roxiepeabody"
+
+ZSH_THEME=powerlevel10k/powerlevel10k
 
 export QT_QPA_PLATFORMTHEME="qt5ct"
 
@@ -77,3 +79,6 @@ autoload -Uz compinit
 compinit
 # Completion for kitty
 kitty + complete setup zsh | source /dev/stdin
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
