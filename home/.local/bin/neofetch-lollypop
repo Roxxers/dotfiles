@@ -1,0 +1,8 @@
+#!/bin/sh
+URL="$(\
+    dbus-send --print-reply --dest=org.mpris.MediaPlayer2.Lollypop \
+    /org/mpris/MediaPlayer2 org.freedesktop.DBus.Properties.Get string:'org.mpris.MediaPlayer2.Player' \
+    string:'Metadata' |\
+    awk -F '"' 'BEGIN {RS=" entry"}; /"mpris:artUrl"/ {a = $4} END {print a ""}')"
+neofetch --kitty "${URL:7}" --crop_mode "normal"
+
