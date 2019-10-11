@@ -18,3 +18,4 @@ git config --global user.email $GIT_AUTHOR_EMAIL
 
 # Golang path
 export GOPATH=$HOME/Projects/go
+export GO111MODULE=on

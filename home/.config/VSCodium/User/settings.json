@@ -12,6 +12,7 @@
     "cSpell.userWords": [
         "TYPECHECK",
         "Tariq",
+        "WORKDIR",
         "abstractproperty",
         "asdict",
         "basestring",
@@ -126,7 +127,6 @@
         "yaml",
         "yml"
     ],
-    "workbench.colorTheme": "Monokai Sweet Darker",
     "docker.dockerComposeDetached": false,
     "docker.dockerComposeBuild": false,
     "[html]": {
@@ -135,5 +135,36 @@
     "docker.containers.label": "ContainerName",
     "terminal.external.linuxExec": "xterm-kitty",
     "terminal.integrated.fontFamily": "inconsolata nerd font",
-    "terminal.integrated.fontSize": 15
+    "terminal.integrated.fontSize": 15,
+    "go.formatTool": "goimports",
+    "go.useLanguageServer": true,
+    "files.associations": {
+        "*.go": "go"
+    },
+    "telemetry.enableCrashReporter": false,
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "update.showReleaseNotes": false,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "variable.parameter.function.language.special.self.python",
+                    "variable.language.special.self.python"
+                ],
+                "settings": {
+                    "foreground": "#7d61b3",
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": [
+                    "comment.line",
+                ],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            }
+        ]
+    },
+    "workbench.colorTheme": "Monokai Sweet Dark"
 }
