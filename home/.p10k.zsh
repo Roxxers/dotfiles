@@ -733,7 +733,8 @@
   #
   # Type `p10k help segment` for documentation and a more sophisticated example.
   function prompt_userhost() {
-    p10k segment -f '#ab9df2' -t "${USER}@${HOST}"
+		HOSTNAME="$(uname -n)"
+    p10k segment -f '#ab9df2' -t "${USER}@${HOSTNAME}"
   }
 
   # User-defined prompt segments can be customized the same way as built-in segments.
