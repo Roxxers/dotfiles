@@ -14,3 +14,5 @@
 	program = gpg
 [tag]
 	forceSignAnnotated = true
+[init]
+	templateDir = /home/roxie/.config/git/template

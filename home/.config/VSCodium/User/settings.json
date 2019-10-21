@@ -32,6 +32,7 @@
         "from",
         "getenv",
         "getslice",
+        "godotenv",
         "healthcheck",
         "ibtehal",
         "idiv",
