@@ -10,12 +10,16 @@
         "english-uk"
     ],
     "cSpell.userWords": [
+        "Referer",
         "TYPECHECK",
         "Tariq",
         "WORKDIR",
         "abstractproperty",
+        "aiohttp",
         "asdict",
+        "asyncio",
         "basestring",
+        "beautifulsoup",
         "builtins",
         "chown",
         "classmethod",
@@ -30,6 +34,7 @@
         "dotfiles",
         "execfile",
         "from",
+        "getcwd",
         "getenv",
         "getslice",
         "godotenv",
@@ -37,6 +42,7 @@
         "ibtehal",
         "idiv",
         "inlinevar",
+        "isdir",
         "isfile",
         "itertools",
         "libpq",
@@ -60,6 +66,7 @@
         "pygtk",
         "pylint",
         "pywal",
+        "pyyaml",
         "rcfile",
         "reddit",
         "reenable",
@@ -167,5 +174,10 @@
             }
         ]
     },
-    "workbench.colorTheme": "Monokai Sweet Dark"
+    "autoDocstring.docstringFormat": "google",
+    "autoDocstring.includeName": true,
+    "workbench.colorTheme": "Monokai Sweet Darker",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.jediEnabled": false
 }
