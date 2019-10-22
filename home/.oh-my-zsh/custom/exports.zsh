@@ -5,6 +5,7 @@ export SHELL="/usr/bin/zsh";
 export PYTHONIOENCODING='UTF-8';
 # Pipenv config for making venvs in project dir
 export PIPENV_VENV_IN_PROJECT=1
+eval "$(pipenv --completion)"
 
 # Prefer UK English and use UTF-8.
 export LANG='en_GB.UTF-8';
