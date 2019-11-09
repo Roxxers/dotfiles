@@ -1,15 +1,165 @@
 {
+    ////// Editor Styling
     "editor.fontFamily": "Fira Code",
-    "vsicons.dontShowNewVersionMessage": true,
+    "editor.fontLigatures": true,
+    "editor.suggestSelection": "first",
+    // Edit tabsizes to make html and json have 2 but most other languages use 4
+    "editor.tabSize": 4,
+    "[html]": {
+        "editor.tabSize": 2
+    },
+    "[json]": {
+        "editor.tabSize": 2
+    },
+    "editor.insertSpaces": true,
+    // Colour Theme Settings
+    "workbench.colorTheme": "Dracula",
+    // Overriding colour scheme to add some stuff most schemes don't have annoyingly
+    "editor.tokenColorCustomizations": {
+        "[Dracula]": {
+            // Change comments to be more readable for this theme
+            "textMateRules": [
+                {
+                    "scope": [
+                        "comment.line",
+                        "comment.block.documentation",
+                        "string.quoted.docstring.multi"
+                    ],
+                    "settings": {
+                        "fontStyle": "italic",
+                        "foreground": "#90a7ee"
+                    }
+                }
+            ]
+        },
+        "[Monokai Sweet Dark]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "variable.parameter.function.language.special.self.python",
+                        "variable.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#7d61b3",
+                    }
+                },
+    
+            ]
+        },
+        "[Monokai Sweet Darker]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "variable.parameter.function.language.special.self.python",
+                        "variable.language.special.self.python"
+                    ],
+                    "settings": {
+                        "foreground": "#7d61b3",
+                    }
+                },
+    
+            ]
+        }
+    },
+    ////// UI and Program Settings
+    "workbench.iconTheme": "material-icon-theme",
+    "explorer.confirmDelete": false,
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.associations": {
+        "*.go": "go",
+        "*.html": "html",
+        ".style.yapf": "ini"
+    },
+    
+    // Remove a lot of remote MS stuff
+    "telemetry.enableCrashReporter": false,
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "update.showReleaseNotes": false,
+    "telemetry.enableTelemetry": false,
+    
+    ////// Terminal Settings (Adding Kitty Support)
+    "terminal.external.linuxExec": "xterm-kitty",
+    "terminal.integrated.fontFamily": "inconsolata nerd font",
+    "terminal.integrated.fontSize": 15,
+    ////// Git Settings
     "git.allowForcePush": true,
     "git.enableCommitSigning": true,
     "git.enableSmartCommit": true,
     "git.autofetch": true,
-    "spellright.addToSystemDictionary": true,
-    "spellright.language": [
-        "english-uk"
+    // Git Lens Ext
+    "gitlens.codeLens.enabled": false,
+    "gitlens.statusBar.enabled": false,
+    "gitlens.views.repositories.location": "scm",
+    "gitlens.views.fileHistory.location": "scm",
+    "gitlens.views.search.enabled": false,
+    "gitlens.views.compare.enabled": false,
+    
+    ////// Python Settings
+    "python.jediEnabled": false,
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true
+    },
+    "python.linting.pylintUseMinimalCheckers": false,
+    "python.formatting.provider": "yapf",
+    // AutoDocString ext
+    "autoDocstring.docstringFormat": "google",
+    "autoDocstring.includeName": true,
+    
+    ////// Docker Settings
+    "docker.dockerComposeDetached": false,
+    "docker.dockerComposeBuild": false,
+    "docker.containers.label": "ContainerName",
+    
+    ////// GoLang Settings
+    "go.formatTool": "goimports",
+    "go.useLanguageServer": true,
+    
+    ////// CSpell check ext
+    "cSpell.enabledLanguageIds": [
+        "asciidoc",
+        "c",
+        "cpp",
+        "css",
+        "dockerfile",
+        "dotenv",
+        "git-commit",
+        "git-rebase",
+        "go",
+        "go.mod",
+        "go.sum",
+        "html",
+        "jade",
+        "java",
+        "javascript",
+        "javascriptreact",
+        "json",
+        "jsonc",
+        "latex",
+        "less",
+        "markdown",
+        "php",
+        "pip-requirements",
+        "plaintext",
+        "pug",
+        "python",
+        "restructuredtext",
+        "rust",
+        "scala",
+        "scss",
+        "shellscript",
+        "text",
+        "typescript",
+        "typescriptreact",
+        "xml",
+        "yaml",
+        "yml"
     ],
     "cSpell.userWords": [
+        "Affero",
+        "Bulma",
         "Referer",
         "TYPECHECK",
         "Tariq",
@@ -20,6 +170,7 @@
         "asyncio",
         "basestring",
         "beautifulsoup",
+        "bitbucket",
         "builtins",
         "chown",
         "classmethod",
@@ -27,6 +178,7 @@
         "concat",
         "contextlib",
         "contextmanager",
+        "csv's",
         "delslice",
         "docstring",
         "docstrings",
@@ -75,6 +227,7 @@
         "roxxers",
         "setslice",
         "siana",
+        "softwareventures",
         "standarderror",
         "strftime",
         "strptime",
@@ -88,96 +241,6 @@
         "xrange",
         "xreadlines"
     ],
-    "editor.fontLigatures": true,
-    "workbench.iconTheme": "simple-icons",
-    "gitlens.codeLens.enabled": false,
-    "gitlens.statusBar.enabled": false,
-    "gitlens.views.repositories.location": "scm",
-    "gitlens.views.fileHistory.location": "scm",
-    "gitlens.views.search.enabled": false,
-    "gitlens.views.compare.enabled": false,
-    "cSpell.enabledLanguageIds": [
-        "asciidoc",
-        "c",
-        "cpp",
-        "css",
-        "dockerfile",
-        "dotenv",
-        "git-commit",
-        "git-rebase",
-        "go",
-        "go.mod",
-        "go.sum",
-        "html",
-        "jade",
-        "java",
-        "javascript",
-        "javascriptreact",
-        "json",
-        "jsonc",
-        "latex",
-        "less",
-        "markdown",
-        "php",
-        "pip-requirements",
-        "plaintext",
-        "pug",
-        "python",
-        "restructuredtext",
-        "rust",
-        "scala",
-        "scss",
-        "shellscript",
-        "text",
-        "typescript",
-        "typescriptreact",
-        "xml",
-        "yaml",
-        "yml"
-    ],
-    "docker.dockerComposeDetached": false,
-    "docker.dockerComposeBuild": false,
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "docker.containers.label": "ContainerName",
-    "terminal.external.linuxExec": "xterm-kitty",
-    "terminal.integrated.fontFamily": "inconsolata nerd font",
-    "terminal.integrated.fontSize": 15,
-    "go.formatTool": "goimports",
-    "go.useLanguageServer": true,
-    "files.associations": {
-        "*.go": "go"
-    },
-    "telemetry.enableCrashReporter": false,
-    "workbench.settings.enableNaturalLanguageSearch": false,
-    "update.showReleaseNotes": false,
-    "editor.tokenColorCustomizations": {
-        "textMateRules": [
-            {
-                "scope": [
-                    "variable.parameter.function.language.special.self.python",
-                    "variable.language.special.self.python"
-                ],
-                "settings": {
-                    "foreground": "#7d61b3",
-                    "fontStyle": "italic"
-                }
-            },
-            {
-                "scope": [
-                    "comment.line",
-                ],
-                "settings": {
-                    "fontStyle": "italic"
-                }
-            }
-        ]
-    },
-    "autoDocstring.docstringFormat": "google",
-    "autoDocstring.includeName": true,
-    "workbench.colorTheme": "Monokai Sweet Darker",
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "python.jediEnabled": false
+    "todo-tree.highlights.enabled": true,
+    
 }
