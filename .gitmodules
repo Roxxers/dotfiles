@@ -1,8 +1,11 @@
 [submodule "home/.oh-my-zsh/custom/plugins/zsh-history-substring-search"]
+    path = home/.oh-my-zsh/custom/plugins/zsh-history-substring-search
 	url = https://github.com/zsh-users/zsh-history-substring-search
 [submodule "home/.oh-my-zsh/custom/plugins/zsh-autosuggestions"]
+    path = home/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
 [submodule "home/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting"]
+    path = home/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting
 [submodule "home/.oh-my-zsh/custom/themes/powerlevel10k"]
 	path = home/.oh-my-zsh/custom/themes/powerlevel10k
