@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/roxie/.oh-my-zsh"
+export ZSH="${HOME}/.oh-my-zsh"
 
 # Themes
 #ZSH_THEME="roxiepeabody"
@@ -78,7 +78,8 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=white'
 autoload -Uz compinit
 compinit
 # Completion for kitty
-kitty + complete setup zsh | source /dev/stdin
-
+if which kitty > /dev/null; then 
+	kitty + complete setup zsh | source /dev/stdin
+fi
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
