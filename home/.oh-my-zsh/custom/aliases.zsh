@@ -36,3 +36,7 @@ alias icat="kitty +kitten icat"
 
 # Kitty's clipboard
 alias klip="kitty +kitten clipboard"
+
+# TPLink Bulb commands
+alias lamp1="pyhs100 --host 192.168.0.10"
+alias lamp2="pyhs100 --host 192.168.0.11"

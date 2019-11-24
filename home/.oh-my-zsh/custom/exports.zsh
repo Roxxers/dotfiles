@@ -1,4 +1,6 @@
-export EDITOR="nvim";
+
+export PATH=$PATH:$HOME/.local/bin
+export EDITOR="vim";
 export SHELL="/usr/bin/zsh";
 
 # Make Python use UTF-8 encoding for output to stdin, stdout, and stderr.
