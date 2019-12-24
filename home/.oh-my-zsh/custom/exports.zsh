@@ -1,5 +1,5 @@
 
-#export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/.local/bin
 export EDITOR="vim";
 export SHELL="/usr/bin/zsh";
 
