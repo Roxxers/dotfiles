@@ -46,15 +46,15 @@
   typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
       status                  # exit code of the last command
       # command_execution_time  # duration of the last command
-      background_jobs         # presence of background jobs
+      # background_jobs         # presence of background jobs
       virtualenv              # python virtual environment (https://docs.python.org/3/library/venv.html)
-      anaconda                # conda environment (https://conda.io/)
+      #anaconda                # conda environment (https://conda.io/)
       pyenv                   # python environment (https://github.com/pyenv/pyenv)
       nodenv                  # node.js version from nodenv (https://github.com/nodenv/nodenv)
       nvm                     # node.js version from nvm (https://github.com/nvm-sh/nvm)
       nodeenv                 # node.js environment (https://github.com/ekalinin/nodeenv)
       # node_version          # node.js version
-      # go_version            # go version (https://golang.org)
+      go_version            # go version (https://golang.org)
       # rust_version          # rustc version (https://www.rust-lang.org)
       # dotnet_version        # .NET version (https://dotnet.microsoft.com)
       #rbenv                   # ruby version from rbenv (https://github.com/rbenv/rbenv)
@@ -63,7 +63,7 @@
       #terraform               # terraform workspace (https://www.terraform.io)
       #aws                     # aws profile (https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html)
       #context                 # user@hostname
-      nordvpn                 # nordvpn connection status, linux only (https://nordvpn.com/)
+      #nordvpn                 # nordvpn connection status, linux only (https://nordvpn.com/)
       ranger                  # ranger shell (https://github.com/ranger/ranger)
       # vpn_ip                # virtual private network indicator
       # ram                   # free RAM
@@ -734,7 +734,7 @@
   # Type `p10k help segment` for documentation and a more sophisticated example.
   function prompt_userhost() {
 		HOSTNAME="$(uname -n)"
-    p10k segment -f '#ab9df2' -t "${USER}@${HOSTNAME}"
+    p10k segment -f $(hostnamecolour) -t "${USER}@${HOSTNAME}"
   }
 
   # User-defined prompt segments can be customized the same way as built-in segments.

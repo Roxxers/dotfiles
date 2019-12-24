@@ -115,7 +115,9 @@
     
     ////// GoLang Settings
     "go.formatTool": "goimports",
-    "go.useLanguageServer": true,
+    "go.useLanguageServer": false,
+    "go.toolsGopath": "/home/roxie/Projects/go",
+    "go.autocompleteUnimportedPackages": true,
     
     ////// CSpell check ext
     "cSpell.enabledLanguageIds": [
@@ -242,5 +244,7 @@
         "xreadlines"
     ],
     "todo-tree.highlights.enabled": true,
+    "material-icon-theme.showWelcomeMessage": false,
+
     
 }
