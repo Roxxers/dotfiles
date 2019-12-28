@@ -1,0 +1,8 @@
+#!/usr/bin/sh
+
+# codium-ext-backup
+# Saves all installed vscodium extensions to make reinstallation easier.
+# Pls add to crontab with crontab -e and using this setting "* 20 * * * /home/roxie/.local/bin/codium-ext-backup"
+# Roxie Gibson 2019
+
+codium --list-extensions > $HOME/.config/vscodium-ext

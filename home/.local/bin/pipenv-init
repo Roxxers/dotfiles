@@ -1,0 +1,10 @@
+#!/usr/bin/sh
+
+# pipenv-init
+# Initaliases a pipenv python environment just how I like them :3 (Pipenv, pylint, and yapf)
+# Roxie Gibson 2019
+
+echo "Installing development packages..."
+pipenv install pylint yapf -d
+cp $HOME/.config/style.yapf.default .style.yapf && cp $HOME/.config/pylint.rc.default .pylint.rc
+echo "Created template pylint and yapf files..."

@@ -243,8 +243,10 @@
         "xrange",
         "xreadlines"
     ],
+    "cSpell.language": "en-GB",
+
+    ////// MISC
     "todo-tree.highlights.enabled": true,
     "material-icon-theme.showWelcomeMessage": false,
-
-    
+    "material-icon-theme.showReloadMessage": false,   
 }

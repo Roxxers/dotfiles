@@ -1,0 +1,9 @@
+#!/usr/bin/sh
+
+# codium-ext-reinstall
+# reinstalls exts from a file for vscodium
+# Roxie Gibson 2019
+
+while IFS= read -r line; do
+  codium --install-extension $line;
+done < ~/.config/vscodium-ext
