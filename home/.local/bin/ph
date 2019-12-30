@@ -1,0 +1,6 @@
+#!/bin/sh
+#
+# ph
+# Good preset for downloading pornhub videos up to 720p
+
+youtube-dl -f "best" --add-metadata --xattrs --embed-thumbnail -o '%(uploader)s_%(title)s.%(ext)s' $1
