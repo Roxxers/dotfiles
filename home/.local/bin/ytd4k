@@ -3,4 +3,4 @@
 # ytd4k
 # Good preset for downloading youtube videos up to 4k. Should only be used on videos you want to download in 4k
 
-youtube-dl -f 'bestvideo[ext=webm,height<=2160]+bestaudio[ext=webm]' --merge-output-format webm --embed-subs --add-metadata --xattrs -o '%(uploader)s_%(title)s.%(ext)s' $1
+youtube-dl -f 'bestvideo[ext=webm,height<=2160]+bestaudio[ext=webm]' --merge-output-format mkv --embed-subs --add-metadata --xattrs -o '%(uploader)s_%(title)s.%(ext)s' $@
