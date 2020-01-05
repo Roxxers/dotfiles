@@ -1,0 +1,9 @@
+#!/usr/bin/sh
+
+# codium-ext-reinstall
+# reinstalls exts from a file for code-oss
+# Roxie Gibson 2019
+
+while IFS= read -r line; do
+  code --install-extension $line;
+done < ~/.config/code-ext

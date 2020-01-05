@@ -2,3 +2,4 @@
 .local/bin
 .oh-my-zsh/custom
 .config/VSCodium/User
+.config/Code - OSS/User

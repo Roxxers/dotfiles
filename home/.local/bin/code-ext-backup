@@ -1,0 +1,8 @@
+#!/usr/bin/sh
+
+# code-ext-backup
+# Saves all installed code-oss extensions to make reinstallation easier.
+# Pls add to crontab with crontab -e and using this setting "0,30 * * * * /home/roxie/.local/bin/code-ext-backup"
+# Roxie Gibson 2019
+
+code --list-extensions > $HOME/.config/code-ext
