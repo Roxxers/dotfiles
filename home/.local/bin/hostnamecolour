@@ -5,12 +5,12 @@ import os
 hostname = os.uname()[1]
 
 colours = {
-    0: "#ff6188",
-    1: "#a9dc76",
-    2: "#ffd866",
-    3: "#fc9867",
-    4: "#ab9df2",
-    5: "#78dce8"
+    0: "#ff5555",
+    1: "#50fa7b",
+    2: "#f0fa8b",
+    3: "#bd92f8",
+    4: "#ff78c5",
+    5: "#8ae9fc"
 }
 
 total = 0

@@ -83,3 +83,6 @@ if which kitty > /dev/null; then
 fi
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
+
+# added by travis gem
+[ -f /home/roxie/.travis/travis.sh ] && source /home/roxie/.travis/travis.sh
