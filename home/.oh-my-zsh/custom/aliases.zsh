@@ -11,7 +11,7 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
 # Better version of cat. Has search and highlighting.
-alias cat='bat'
+#alias cat='bat'
 
 # uses fzf to preview files in a menu
 alias preview="fzf --preview 'bat --color \"always\" {}'"
