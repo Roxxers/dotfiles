@@ -1,6 +1,23 @@
 # Path to your oh-my-zsh installation.
 export ZSH="${HOME}/.oh-my-zsh"
 
+# Test for AUR omz install to point to
+case `pacman -Qe | grep "oh-my-zsh" >/dev/null; echo $?` in
+  0)
+    # code if found
+    export ZSH="/usr/share/oh-my-zsh"
+    ;;
+  1)
+    # code if not found
+    export ZSH="${HOME}/.oh-my-zsh"
+    ;;
+  *)
+    # code if an error occurred
+    export ZSH="${HOME}/.oh-my-zsh"
+    ;;
+esac
+
+
 # Themes
 #ZSH_THEME="roxiepeabody"
 
@@ -53,7 +70,7 @@ export QT_QPA_PLATFORMTHEME="qt5ct"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
+ZSH_CUSTOM="$HOME/.omz_custom"
 
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
