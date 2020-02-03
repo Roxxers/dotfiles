@@ -1,0 +1,25 @@
+#!/bin/sh
+DBUS_OUTPUT="$(\
+    dbus-send --print-reply --dest=org.mpris.MediaPlayer2.elisa \
+    /org/mpris/MediaPlayer2 org.freedesktop.DBus.Properties.Get string:'org.mpris.MediaPlayer2.Player' \
+    string:'Metadata' |\
+    awk -F '"' 'BEGIN {RS=" entry"}; /"mpris:artUrl"/ {a = $4} END {print a ""}')"
+
+    
+case `echo "${DBUS_OUTPUT}" | grep ".flac" >/dev/null; echo $?` in
+  0)
+    # code if found
+    DATE=$(date +'%F-%T.%N')
+    metaflac "${DBUS_OUTPUT:14}" --export-picture-to=- > /tmp/"${DATE}"
+    URL="/tmp/${DATE}"
+    ;;
+  1)
+    # code if not found
+    URL="${DBUS_OUTPUT:7}"
+    ;;
+    *)
+    echo "nothing" >/dev/null
+esac
+
+neofetch --kitty "${URL}" --crop_mode "normal" "$@"
+
