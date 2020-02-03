@@ -15,7 +15,7 @@ Show Tab Bar=true
 Startup Session=manual
 
 [KFileDialog Settings]
-Recent Files[$e]=test.sh,file:$HOME/.p10k.zsh,file:$HOME/.homesick/repos/dotfiles/home/.config/neofetch/config.conf,file:$HOME/.homesick/repos/dotfiles/home/.local/bin/neofetch-lollypop,file:$HOME/.homesick/repos/dotfiles/home/.local/bin/neofetch-elisa
+Recent Files[$e]=test.sh,file:$HOME/.zshrc,file:$HOME/.p10k.zsh,file:$HOME/.homesick/repos/dotfiles/home/.config/neofetch/config.conf,file:$HOME/.homesick/repos/dotfiles/home/.local/bin/neofetch-lollypop,file:$HOME/.homesick/repos/dotfiles/home/.local/bin/neofetch-elisa
 Recent URLs[$e]=file:$HOME/.homesick/repos/dotfiles/home/.config/neofetch/
 detailViewIconSize=0
 
@@ -118,10 +118,11 @@ RunPrefix=
 SetEditor=false
 
 [MainWindow]
-Height 1080=1009
+Height 1080=749
 State=AAAA/wAAAAD9AAAAAAAAB4AAAAOtAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
-Width 1920=1920
+Width 1920=826
+Window-Maximized 1080x1920=true
 
 [filebrowser]
 toolbar actions=

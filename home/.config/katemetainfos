@@ -132,14 +132,14 @@ URL=file:///home/roxie/.homesick/repos/dotfiles/home/.config/compton.conf
 
 [file:///home/roxie/.homesick/repos/dotfiles/home/.config/neofetch/config.conf]
 Bookmarks=
-Checksum=67c130a0545563ef6df86ad0e59acd98b4c93b45
+Checksum=4579dad4f8ee9c31feb24ab364f501cd22ac498b
 Encoding=UTF-8
 Highlighting=Bash
 Highlighting Set By User=false
 Indentation Mode=normal
 Mode=Bash
 Mode Set By User=true
-Time=2020,2,3,4,15,5
+Time=2020,2,3,15,58,31
 URL=file:///home/roxie/.homesick/repos/dotfiles/home/.config/neofetch/config.conf
 
 [file:///home/roxie/.homesick/repos/dotfiles/home/.config/plasma-workspace/env/askpass.sh]
@@ -235,7 +235,7 @@ Highlighting Set By User=false
 Indentation Mode=normal
 Mode=Zsh
 Mode Set By User=false
-Time=2020,2,3,4,15,7
+Time=2020,2,3,15,58,31
 URL=file:///home/roxie/.homesick/repos/dotfiles/home/.zshrc
 
 [file:///home/roxie/.kde4/share/config/kdeglobals]
@@ -249,6 +249,18 @@ Mode=Normal
 Mode Set By User=false
 Time=2020,2,3,4,15,22
 URL=file:///home/roxie/.kde4/share/config/kdeglobals
+
+[file:///home/roxie/.local/share/applications/firefox.desktop]
+Bookmarks=
+Checksum=6e0d9ad1fcfa748ad5e95ef88471660e70cd419d
+Encoding=UTF-8
+Highlighting=.desktop
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=.desktop
+Mode Set By User=false
+Time=2020,2,3,15,33,51
+URL=file:///home/roxie/.local/share/applications/firefox.desktop
 
 [file:///home/roxie/.local/share/dolphin/view_properties/global/.directory]
 Bookmarks=
