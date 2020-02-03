@@ -6,7 +6,7 @@ Dotfiles mostly centered around zsh.  These dotfiles are powered by [Homesick](h
 
 This repo contains the standard config files I use. The main highlights are my kitty term config files, VSCode settings, zsh and oh-my-zsh, neofetch, and nvim. There is also a collection of useful script files.
 
-It also including my KDE theming. 
+It also includes my KDE theming. 
 
 ## Nice to have's
 
