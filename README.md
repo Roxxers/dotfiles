@@ -4,7 +4,9 @@ Dotfiles mostly centered around zsh.  These dotfiles are powered by [Homesick](h
 
 ## Explination
 
-This repo contains the standard config files I use. The main highlights are my kitty term config files, VSCodium settings, zsh and oh-my-zsh, neofetch, and nvim. There is also a collection of useful bin files.
+This repo contains the standard config files I use. The main highlights are my kitty term config files, VSCode settings, zsh and oh-my-zsh, neofetch, and nvim. There is also a collection of useful script files.
+
+It also including my KDE theming. 
 
 ## Nice to have's
 
@@ -30,7 +32,7 @@ mediainfo
 python-pdftotext # In the AUR
 ```
 
-You also need to recursively pull this repo as there are submodules for my omz plugins
+You also need to recursively pull this repo as there are submodules for my omz plugins and some themes.
 
 ## Thanks
 
@@ -39,3 +41,5 @@ I have pick 'n' mixed many different dotfile repos instead of just forking one. 
 [mathiasbynens](https://github.com/mathiasbynens) for their [dotfiles](https://github.com/mathiasbynens/dotfiles)
 
 [holman](https://github.com/holman/) for a lot of scripts in their [dotfiles](https://github.com/holman/dotfiles)
+
+Thanks to [Klorax](https://gitlab.com/klorax/ui_config) for their theming and Daniruiz for the [icons](https://github.com/daniruiz/flat-remix).
