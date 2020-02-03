@@ -1,5 +1,7 @@
+.gnupg
 .config
 .local/bin
 .local/share
+.local/share/plasma
 .config/VSCodium/User
 .config/Code - OSS/User

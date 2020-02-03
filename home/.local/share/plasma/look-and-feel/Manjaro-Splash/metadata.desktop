@@ -1,0 +1,13 @@
+[Desktop Entry]
+Comment=Manjaro Linux splash for Plasma5
+Name=Manjaro-Splash
+X-KDE-PluginInfo-Author=mrmaire
+X-KDE-PluginInfo-Category=Plasma Look And Feel
+X-KDE-PluginInfo-Email=maire.nunez@gmail.com
+X-KDE-PluginInfo-EnabledByDefault=true
+X-KDE-PluginInfo-License=GPL 3.0
+X-KDE-PluginInfo-Name=Manjaro-Splash
+X-KDE-PluginInfo-Version=1.0
+X-KDE-PluginInfo-Website=https://github.com/mrmaire
+X-KDE-ServiceTypes=Plasma/LookAndFeel
+X-KPackage-Dependencies=kns://plasma-themes.knsrc/api.kde-look.org/1213730

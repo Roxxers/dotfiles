@@ -1,0 +1,16 @@
+[Animation]
+Frames=8
+
+[Appearance]
+BackgroundColorOpacity=40
+Skin=arc-dark
+SkinInstalledWithKns=true
+Translucency=true
+
+[DownloadDialog Settings]
+Height 1080=494
+Width 1920=700
+
+[Window]
+Height=30
+Width=70
