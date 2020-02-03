@@ -70,6 +70,18 @@ Mode Set By User=false
 Time=2020,2,3,4,16,19
 URL=file:///home/roxie/.config/kde.org/systemsettings.conf
 
+[file:///home/roxie/.config/konsolerc]
+Bookmarks=
+Checksum=f8149b8a36b656d1a62303d8567841a7c18b6d23
+Encoding=UTF-8
+Highlighting=None
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Normal
+Mode Set By User=false
+Time=2020,2,3,16,39,56
+URL=file:///home/roxie/.config/konsolerc
+
 [file:///home/roxie/.gnupg/gpg.conf]
 Bookmarks=
 Checksum=a68ebbee2efeff142f5887335521d31ad0ec0869
@@ -153,6 +165,18 @@ Mode=Bash
 Mode Set By User=false
 Time=2020,2,2,21,35,36
 URL=file:///home/roxie/.homesick/repos/dotfiles/home/.config/plasma-workspace/env/askpass.sh
+
+[file:///home/roxie/.homesick/repos/dotfiles/home/.config/yakuakerc]
+Bookmarks=
+Checksum=e09fe487c3c66b4a81de54a96855d42b1b0ea79f
+Encoding=UTF-8
+Highlighting=None
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Normal
+Mode Set By User=false
+Time=2020,2,3,16,20,55
+URL=file:///home/roxie/.homesick/repos/dotfiles/home/.config/yakuakerc
 
 [file:///home/roxie/.homesick/repos/dotfiles/home/.local/bin/neofetch-elisa]
 Bookmarks=
