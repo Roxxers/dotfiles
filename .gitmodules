@@ -1,11 +1,11 @@
 [submodule "home/.omz_custom/plugins/zsh-history-substring-search"]
-  path = home/.omz_custom/plugins/zsh-history-substring-search
+	path = home/.omz_custom/plugins/zsh-history-substring-search
 	url = https://github.com/zsh-users/zsh-history-substring-search
 [submodule "home/.omz_custom/plugins/zsh-autosuggestions"]
-  path = home/.omz_custom/plugins/zsh-autosuggestions
+	path = home/.omz_custom/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
 [submodule "home/.omz_custom/plugins/zsh-syntax-highlighting"]
-  path = home/.omz_custom/plugins/zsh-syntax-highlighting
+	path = home/.omz_custom/plugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting
 [submodule "home/.omz_custom/themes/powerlevel10k"]
 	path = home/.omz_custom/themes/powerlevel10k
@@ -16,3 +16,6 @@
 [submodule "home/.themes/arc-dracula"]
 	path = home/.themes/arc-dracula
 	url = https://github.com/Vertmo/arc-dracula
+[submodule "zsh-history-substring-search"]
+	path = zsh-history-substring-search
+	url = https://github.com/zsh-users/zsh-history-substring-search
