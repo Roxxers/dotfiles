@@ -114,6 +114,7 @@
     "docker.containers.label": "ContainerName",
     
     ////// GoLang Settings
+    "go.gopath": "/home/roxie/Projects/go",
     "go.formatTool": "goimports",
     "go.lintOnSave": "package",
     "go.useLanguageServer": false,

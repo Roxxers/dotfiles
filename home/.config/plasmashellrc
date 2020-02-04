@@ -1,3 +1,7 @@
+[DownloadDialog Settings]
+Height 1080=494
+Width 1920=700
+
 [KFileDialog Settings]
 Recent Files[$e]=wallpaper.png,file:$HOME/Pictures/Wallpapers/alena-aenami-way.jpg,file:$HOME/Pictures/Wallpapers/alena-aenami-rooflinesgirl-1k-2.jpg,file:$HOME/Pictures/Wallpapers/alena-aenami-dreamer-1k.jpg,file:$HOME/wallpaper.png
 Recent URLs[$e]=file:$HOME/Pictures/Wallpapers/
@@ -8,11 +12,8 @@ Height 1080=456
 Width 1920=410
 
 [PlasmaRunnerManager]
-LaunchCounts=1 services_kitty.desktop,1 services_kcm_nightcolor.desktop
+LaunchCounts=1 services_org.kde.ksysguard.desktop,1 services_khotkeys.desktop,1 services_systemsettings.desktop,1 services_PBE.QOwnNotes.desktop,1 services_kitty.desktop,1 services_kcm_nightcolor.desktop
 pluginWhiteList=services
-
-[PlasmaTransientsConfig]
-PreloadWeight=0
 
 [PlasmaViews][Panel 1][Defaults]
 thickness=44
