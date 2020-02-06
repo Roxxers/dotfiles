@@ -24,3 +24,6 @@ git config --global user.email $GIT_AUTHOR_EMAIL
 # Golang path
 export GOPATH=$HOME/Projects/go
 export GO111MODULE=on
+
+# Ruby Stuff
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
