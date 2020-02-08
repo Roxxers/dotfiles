@@ -9,7 +9,7 @@ Switch to Next Keyboard Layout=Ctrl+Alt+K,none,Switch to Next Keyboard Layout
 _k_friendly_name=KDE Daemon
 
 [flameshot.desktop]
-Capture=,none,Take screenshot
+Capture=Print,none,Take screenshot
 Configure=none,none,Configure
 _k_friendly_name=Launch Flameshot
 _launch=,none,Launch Flameshot
@@ -44,11 +44,8 @@ display=Display\tMeta+P,Display\tMeta+P,Switch Display
 
 [khotkeys]
 _k_friendly_name=KDE Daemon
-<<<<<<< HEAD
-=======
-{019dbbde-ea52-47cc-a423-8685821525f4}=Ctrl+Alt+T,none,Launch Konsole
->>>>>>> e8a45dce4da7c1cfd8527803310a2170bbc9846e
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=,none,Search
+{fd4ba702-3fbb-4516-8494-cb9c9860854c}=,none,Launch Konsole
 
 [kmix]
 _k_friendly_name=Audio Volume
@@ -238,19 +235,11 @@ _launch=Meta+E,Meta+E,Dolphin
 
 [org.kde.spectacle.desktop]
 ActiveWindowScreenShot=Meta+Print,Meta+Print,Capture Active Window
-<<<<<<< HEAD
-CurrentMonitorScreenShot=,,Capture Current Monitor
-FullScreenScreenShot=Shift+Print,Shift+Print,Capture Entire Desktop
-RectangularRegionScreenShot=Meta+Shift+Print,Meta+Shift+Print,Capture Rectangular Region
-_k_friendly_name=Spectacle
-_launch=,Print,Spectacle
-=======
 CurrentMonitorScreenShot=,none,Capture Current Monitor
 FullScreenScreenShot=Shift+Print,Shift+Print,Capture Entire Desktop
 RectangularRegionScreenShot=Meta+Shift+Print,Meta+Shift+Print,Capture Rectangular Region
 _k_friendly_name=Spectacle
-_launch=Print,Print,Launch Spectacle
->>>>>>> e8a45dce4da7c1cfd8527803310a2170bbc9846e
+_launch=,Print,Launch Spectacle
 
 [org_kde_powerdevil]
 Decrease Keyboard Brightness=Keyboard Brightness Down,Keyboard Brightness Down,Decrease Keyboard Brightness
