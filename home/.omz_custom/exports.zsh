@@ -9,6 +9,10 @@ export PYTHONIOENCODING='UTF-8';
 export PIPENV_VENV_IN_PROJECT=1
 eval "$(pipenv --completion)"
 
+# Add var for my Homesick dotfiles to easily access it
+
+export HOMESICKHOME=$HOME/.homesick/repos/dotfiles/home
+
 # Prefer UK English and use UTF-8.
 export LANG='en_GB.UTF-8';
 export LC_ALL='en_GB.UTF-8';
