@@ -3,5 +3,6 @@
 .local/bin
 .local/share
 .local/share/plasma
+.local/share/icons
 .config/VSCodium/User
 .config/Code - OSS/User

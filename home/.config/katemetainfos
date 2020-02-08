@@ -118,6 +118,18 @@ Mode Set By User=false
 Time=2020,2,8,0,26,8
 URL=file:///home/roxie/.config/stacer/settings.ini
 
+[file:///home/roxie/.homesick/repos/dotfiles/.homesick_subdir]
+Bookmarks=
+Checksum=8656bacd8d507b52083cc60312e9208a347b7ef7
+Encoding=UTF-8
+Highlighting=None
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Normal
+Mode Set By User=false
+Time=2020,2,8,4,2,43
+URL=file:///home/roxie/.homesick/repos/dotfiles/.homesick_subdir
+
 [file:///home/roxie/.homesick/repos/dotfiles/home/.gnupg/gpg.conf]
 Bookmarks=
 Checksum=a68ebbee2efeff142f5887335521d31ad0ec0869
