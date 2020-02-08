@@ -103,9 +103,9 @@ ForegroundPositive=80,250,123
 ForegroundVisited=139,233,253
 
 [General]
-ColorScheme=KloraxDracula
+ColorScheme=Klorax. Dracula
 Name[en_GB]=Breeze Dark
-Name=Breeze Dark
+Name=Klorax. Dracula
 TerminalApplication[$e]=kitty
 dbfile=/home/roxie/.mozilla/firefox/51oazab7.default/places.sqlite
 font=Noto Sans,10,-1,5,50,0,0,0,0,0
