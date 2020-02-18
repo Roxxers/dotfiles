@@ -19,3 +19,6 @@
 [submodule "zsh-history-substring-search"]
 	path = zsh-history-substring-search
 	url = https://github.com/zsh-users/zsh-history-substring-search
+[submodule "home/.omz_custom/plugins/zsh-completions"]
+	path = home/.omz_custom/plugins/zsh-completions
+	url = https://github.com/zsh-users/zsh-completions
