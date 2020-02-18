@@ -1,0 +1,6 @@
+#!/bin/sh
+#
+# ytd
+# Good preset for downloading twitch videos
+
+youtube-dl -f 'best' --add-metadata --xattrs -o '%(uploader)s_%(title)s.%(ext)s' $@ 

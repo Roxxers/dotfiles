@@ -79,8 +79,17 @@ ZSH_CUSTOM="$HOME/.omz_custom"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 	archlinux
+	go
+	golang
 	git
+	pip
+	pipenv
+	pylint
+	python
 	sudo
+	systemd
+  virtualenvwrapper
+	zsh-completions
 	zsh-autosuggestions
 	zsh-history-substring-search 
 	zsh-syntax-highlighting
