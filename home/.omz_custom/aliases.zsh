@@ -40,3 +40,8 @@ alias klip="kitty +kitten clipboard"
 # TPLink Bulb commands
 alias lamp1="pyhs100 --host 192.168.0.10"
 alias lamp2="pyhs100 --host 192.168.0.11"
+
+# Completion for work pass repo
+compdef _pass autopass
+zstyle ':completion::complete:autopass::' prefix "$HOME/Documents/Autonomic/infrastructure/credentials/password-store/"
+alias autopass="PASSWORD_STORE_DIR=$HOME/Documents/Autonomic/infrastructure/credentials/password-store/ pass"

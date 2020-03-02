@@ -109,7 +109,7 @@ Word Completion Minimal Word Length=3
 Word Completion Remove Tail=true
 
 [KTextEditor::Search]
-Search History=dra
+Search History=test,dra,8e04d474-0f63-4f63-8675-34772a30986c
 
 [Konsole]
 AutoSyncronize=true
@@ -118,12 +118,12 @@ RunPrefix=
 SetEditor=false
 
 [MainWindow]
-Height 1080=749
+Height 1080=790
 Height 768=694
-State=AAAA/wAAAAD9AAAAAAAAAoAAAAGcAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAAAABhMAAALSAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
 Width 1366=1366
-Width 1920=826
+Width 1920=1555
 
 [Open-with settings]
 CompletionMode=1

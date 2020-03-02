@@ -162,6 +162,7 @@
         "yml"
     ],
     "cSpell.userWords": [
+        "Admin",
         "Affero",
         "Bulma",
         "Referer",
@@ -233,6 +234,7 @@
         "resp",
         "roxxers",
         "setslice",
+        "setup",
         "siana",
         "softwareventures",
         "standarderror",
@@ -255,5 +257,8 @@
     ////// MISC
     "todo-tree.highlights.enabled": true,
     "material-icon-theme.showWelcomeMessage": false,
-    "material-icon-theme.showReloadMessage": false,   
+    "material-icon-theme.showReloadMessage": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    "todo-tree.tree.showScanModeButton": false,
+    
 }
