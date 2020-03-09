@@ -6,3 +6,4 @@
 .local/share/icons
 .config/VSCodium/User
 .config/Code - OSS/User
+.ssh
