@@ -5,5 +5,5 @@
 # Roxie Gibson 2019
 
 while IFS= read -r line; do
-  code --install-extension $line;
+  code-oss --install-extension $line;
 done < ~/.config/code-ext
