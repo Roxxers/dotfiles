@@ -196,6 +196,7 @@
         "getenv",
         "getslice",
         "godotenv",
+        "gonic",
         "grequests",
         "healthcheck",
         "ibtehal",
@@ -236,6 +237,7 @@
         "setslice",
         "setup",
         "siana",
+        "socketio",
         "softwareventures",
         "standarderror",
         "strftime",
@@ -260,5 +262,9 @@
     "material-icon-theme.showReloadMessage": false,
     "vsicons.dontShowNewVersionMessage": true,
     "todo-tree.tree.showScanModeButton": false,
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": false,
+    "editor.formatOnType": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
     
 }

@@ -10,3 +10,7 @@ function tombs() {
 	swapon --show
 }
 
+totp_uri() { 
+  # Args are Secret - Username - Provider
+	echo "otpauth://totp/${2}?secret=${1}&issuer=${3}"                                    
+}

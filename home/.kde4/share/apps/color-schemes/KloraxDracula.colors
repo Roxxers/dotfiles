@@ -4,7 +4,7 @@ ColorAmount=0
 ColorEffect=0
 ContrastAmount=0.5
 ContrastEffect=1
-IntensityAmount=0
+IntensityAmount=-0.30000000000000004
 IntensityEffect=2
 
 [ColorEffects:Inactive]
