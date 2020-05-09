@@ -1,9 +1,11 @@
 #! /usr/bin/env bash
 
-FILENAME=$(basename "${1}" | sed 's/\.[^.]*$//')
-BITRATE=$(ffprobe -hide_banner -loglevel 0 -show_format -i "${1}"| grep bit_rate | sed 's/.*bit_rate=\([0-9]\+\).*/\1/g')
-NEWBITRATE=$(echo "scale=0; ${BITRATE}*70/100" | bc)
-echo $FILENAME
-echo $NEWBITRATE
-
-ffmpeg -hwaccel auto -i "${1}" -c:a copy -c:v hevc_nvenc -preset slow -rc vbr -qp 10 -b:v $NEWBITRATE "${FILENAME}-h265.mp4"
+for FILE in "$@":
+do
+	FILENAME=$(basename "${FILE}" | sed 's/\.[^.]*$//')
+	BITRATE=$(ffprobe -hide_banner -loglevel 0 -show_format -i "${FILE}"| grep bit_rate | sed 's/.*bit_rate=\([0-9]\+\).*/\1/g')
+	NEWBITRATE=$(echo "scale=0; ${BITRATE}*70/100" | bc)
+	echo $FILENAME
+	echo $NEWBITRATE
+	ffmpeg -hwaccel auto -i "${FILE}" -c:a copy -c:v hevc_nvenc -preset slow -rc vbr -qp 10 -b:v $NEWBITRATE "${FILENAME}-h265.mp4"
+done
