@@ -1,0 +1,7 @@
+#! /usr/bin/env bash
+
+set -e
+
+ffmpeg -f concat -safe 0 -i <(for f in "$@"; do echo "file '$PWD/$f'"; done) -c copy output.mp4
+FILES=$(for f in "$@"; do echo " $f"; done)
+echo "Merged ${FILES} into output.mp4"
