@@ -2,13 +2,8 @@
 
 for var in "$@":
 do
-	echo $#
-	if (( "$#" == "1" )); then
-		FILE="${var%:*}"
-	else
-		FILE="${var}"
-	fi
-	FILENAME=$(basename "${FILE}" | sed 's/\.[^.]*$//')
+	FILE="${var%:}"
+	ILENAME=$(basename "${FILE}" | sed 's/\.[^.]*$//')
 	BITRATE=$(ffprobe -hide_banner -loglevel 0 -show_format -i "${FILE}"| grep bit_rate | sed 's/.*bit_rate=\([0-9]\+\).*/\1/g')
 	NEWBITRATE=$(echo "scale=0; ${BITRATE}*70/100" | bc)
 	echo $FILENAME
