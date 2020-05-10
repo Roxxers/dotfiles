@@ -10,12 +10,12 @@ do
 	FILE="${var%:}"
 	FILENAME=$(basename "${FILE}" | sed 's/\.[^.]*$//')
 	NEWFILENAME="${FILENAME}-h265.mp4"
-	BITRATE=$(ffprobe -hide_banner -loglevel 0 -show_format -i "${FILE}"| grep bit_rate | sed 's/.*bit_rate=\([0-9]\+\).*/\1/g')
+	BITRATE=$(ffprobe -hide_banner -loglevel 0 -show_format -i "${FILE}" | grep bit_rate | sed 's/.*bit_rate=\([0-9]\+\).*/\1/g')
 	NEWBITRATE=$(echo "scale=0; ${BITRATE}*70/100" | bc)
 	ffmpeg -loglevel warning -hide_banner -stats -hwaccel auto -i "${FILE}" -c:a copy -c:v hevc_nvenc -preset slow -rc vbr -qp 10 -b:v $NEWBITRATE "${NEWFILENAME}"
 	TOTAL_SIZE=$(( $TOTAL_SIZE + $(du -b "$FILE" | cut -f 1)))
 	NEW_SIZE=$(( $NEW_SIZE + $(du -b "$NEWFILENAME" | cut -f 1)))
 done
 
-PERCENT_SAVED=$(echo "scale=2; ${NEW_SIZE} / ${TOTAL_SIZE} * 100" | bc)
+PERCENT_SAVED=$(echo "scale=2; 100 - ${NEW_SIZE} / ${TOTAL_SIZE} * 100" | bc)
 echo "Saved ${PERCENT_SAVED}% of disk space!!"
