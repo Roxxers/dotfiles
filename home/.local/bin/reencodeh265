@@ -7,9 +7,10 @@ NEW_SIZE=0
 
 for var in "$@":
 do
-	FILE="${var%:}"
-	FILENAME=$(basename "${FILE}" | sed 's/\.[^.]*$//')
-	NEWFILENAME="${FILENAME}-h265.mp4"
+	FILE=$(basename "${var%:}")
+	FILENAME=$(echo "${FILE}" | sed 's/\.[^.]*$//')
+	EXT=$(echo ${FILE##*.})
+	NEWFILENAME="${FILENAME}-h265.${EXT}"
 	BITRATE=$(ffprobe -hide_banner -loglevel 0 -show_format -i "${FILE}" | grep bit_rate | sed 's/.*bit_rate=\([0-9]\+\).*/\1/g')
 	NEWBITRATE=$(echo "scale=0; ${BITRATE}*70/100" | bc)
 	ffmpeg -loglevel warning -hide_banner -stats -hwaccel auto -i "${FILE}" -c:a copy -c:v hevc_nvenc -preset slow -rc vbr -qp 10 -b:v $NEWBITRATE "${NEWFILENAME}"
