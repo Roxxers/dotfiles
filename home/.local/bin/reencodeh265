@@ -1,6 +1,45 @@
 #! /usr/bin/env bash
 
+# Needs docs!!!!!
+
 set -e
+
+usage() {
+    cat <<HELP_USAGE
+    $(basename $0)  [-b bitrate_per] files
+
+    Reencode video files from h264 to h265 with gpu acceleration
+
+   -b  Bitrate of the new encoded file as a percentage of the old files bitrate.
+   -h  This help message
+HELP_USAGE
+}
+
+calc_new_bitrate() {
+	# Passes current bitrate
+	if [ -z ${NEWBITRATEPER+x} ] # If NEWBITRATE isn't set
+	then
+		NEWBITRATEPER=70
+	fi
+	echo "scale=0; ${1}*${NEWBITRATEPER}/100" | bc
+}
+
+# Exit if no args
+if [ $# == 0 ]; then
+    usage
+	exit 0
+fi
+
+# Option parsing
+
+while getopts 'b:h' flag; do
+    case "${flag}" in
+        b) NEWBITRATEPER=$OPTARG;; # SHOULD BE PERCENTAGE INTEGER
+        *) usage; exit 0;;
+    esac
+done
+
+shift $((OPTIND-1))
 
 TOTAL_SIZE=0
 NEW_SIZE=0
@@ -12,7 +51,8 @@ do
 	EXT=$(echo ${FILE##*.})
 	NEWFILENAME="${FILENAME}-h265.${EXT}"
 	BITRATE=$(ffprobe -hide_banner -loglevel 0 -show_format -i "${FILE}" | grep bit_rate | sed 's/.*bit_rate=\([0-9]\+\).*/\1/g')
-	NEWBITRATE=$(echo "scale=0; ${BITRATE}*70/100" | bc)
+	NEWBITRATE=$(calc_new_bitrate $BITRATE)
+
 	ffmpeg -loglevel warning -hide_banner -stats -hwaccel auto -i "${FILE}" -c:a copy -c:v hevc_nvenc -preset slow -rc vbr -qp 10 -b:v $NEWBITRATE "${NEWFILENAME}"
 	TOTAL_SIZE=$(( $TOTAL_SIZE + $(du -b "$FILE" | cut -f 1)))
 	NEW_SIZE=$(( $NEW_SIZE + $(du -b "$NEWFILENAME" | cut -f 1)))
