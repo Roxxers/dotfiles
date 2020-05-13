@@ -24,6 +24,31 @@ calc_new_bitrate() {
 	echo "scale=0; ${1}*${NEWBITRATEPER}/100" | bc
 }
 
+get_new_filename() {
+	if [ "$EXT" != "wmv" ]; then
+		echo "${FILENAME}-h265.${EXT}"
+	else
+		echo "${FILENAME}-h265.mp4"
+	fi
+
+}
+
+convert() {
+	ffmpeg \
+		-loglevel warning \
+		-hide_banner \
+		-stats \
+		-hwaccel auto \
+		-i "${FILE}" \
+		-c:a aac \
+		-c:v hevc_nvenc \
+		-preset slow \
+		-rc vbr \
+		-qp 10 \
+		-b:v $NEWBITRATE \
+		"${NEWFILENAME}"
+}
+
 # Exit if no args
 if [ $# == 0 ]; then
     usage
@@ -49,11 +74,11 @@ do
 	FILE=$(basename "${var%:}")
 	FILENAME=$(echo "${FILE}" | sed 's/\.[^.]*$//')
 	EXT=$(echo ${FILE##*.})
-	NEWFILENAME="${FILENAME}-h265.${EXT}"
+
+	NEWFILENAME=$(get_new_filename)
 	BITRATE=$(ffprobe -hide_banner -loglevel 0 -show_format -i "${FILE}" | grep bit_rate | sed 's/.*bit_rate=\([0-9]\+\).*/\1/g')
 	NEWBITRATE=$(calc_new_bitrate $BITRATE)
-
-	ffmpeg -loglevel warning -hide_banner -stats -hwaccel auto -i "${FILE}" -c:a copy -c:v hevc_nvenc -preset slow -rc vbr -qp 10 -b:v $NEWBITRATE "${NEWFILENAME}"
+	convert
 	TOTAL_SIZE=$(( $TOTAL_SIZE + $(du -b "$FILE" | cut -f 1)))
 	NEW_SIZE=$(( $NEW_SIZE + $(du -b "$NEWFILENAME" | cut -f 1)))
 done
