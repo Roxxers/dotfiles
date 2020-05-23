@@ -7,8 +7,9 @@
        show = diff-so-fancy | less --tabs=1,5 -RFX
 
 [merge]
-	tool = diffuse
-
+        tool = vscode
+[mergetool "vscode"]
+        cmd = code --wait $MERGED
 
 [commit]
 	gpgsign = true

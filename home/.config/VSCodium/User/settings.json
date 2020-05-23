@@ -268,5 +268,6 @@
     "editor.formatOnSave": false,
     "editor.formatOnType": false,
     "typescript.updateImportsOnFileMove.enabled": "always",
+    "latex-workshop.view.pdf.viewer": "tab",
     
 }

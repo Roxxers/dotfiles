@@ -24,11 +24,14 @@ calc_new_bitrate() {
 	echo "scale=0; ${1}*${NEWBITRATEPER}/100" | bc
 }
 
+AUDIO_CODEC="copy"
+
 get_new_filename() {
 	if [ "$EXT" != "wmv" ]; then
 		echo "${FILENAME}-h265.${EXT}"
 	else
 		echo "${FILENAME}-h265.mp4"
+		AUDIO_CODEC="AAC"
 	fi
 
 }
@@ -40,10 +43,14 @@ convert() {
 		-stats \
 		-hwaccel auto \
 		-i "${FILE}" \
-		-c:a aac \
+		-c:a ${AUDIO_CODEC} \
+		-map 0 \
 		-c:v hevc_nvenc \
+		-c:s copy \
 		-preset slow \
+		-pix_fmt "${BITDEPTH}" \
 		-rc vbr \
+		-max_muxing_queue_size 1024 \
 		-qp 10 \
 		-b:v $NEWBITRATE \
 		"${NEWFILENAME}"
@@ -57,17 +64,19 @@ fi
 
 # Option parsing
 
-while getopts 'b:h' flag; do
+TOTAL_SIZE=0
+NEW_SIZE=0
+BITDEPTH="yuv420p"
+
+while getopts 'b:hd' flag; do
     case "${flag}" in
+		d) BITDEPTH="p010le";;
         b) NEWBITRATEPER=$OPTARG;; # SHOULD BE PERCENTAGE INTEGER
         *) usage; exit 0;;
     esac
 done
 
 shift $((OPTIND-1))
-
-TOTAL_SIZE=0
-NEW_SIZE=0
 
 for var in "$@":
 do
