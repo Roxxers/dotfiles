@@ -24,14 +24,14 @@ calc_new_bitrate() {
 	echo "scale=0; ${1}*${NEWBITRATEPER}/100" | bc
 }
 
-AUDIO_CODEC="copy"
 
 get_new_filename() {
 	if [ "$EXT" != "wmv" ]; then
 		echo "${FILENAME}-h265.${EXT}"
+		AUDIO_CODEC="copy"
 	else
 		echo "${FILENAME}-h265.mp4"
-		AUDIO_CODEC="AAC"
+		export AUDIO_CODEC="AAC"
 	fi
 
 }
@@ -83,6 +83,13 @@ do
 	FILE=$(basename "${var%:}")
 	FILENAME=$(echo "${FILE}" | sed 's/\.[^.]*$//')
 	EXT=$(echo ${FILE##*.})
+	AUDIO_CODEC="copy"
+
+	if [ "$EXT" != "wmv" ]; then
+		AUDIO_CODEC="copy"
+	else
+		AUDIO_CODEC="aac"
+	fi
 
 	NEWFILENAME=$(get_new_filename)
 	BITRATE=$(ffprobe -hide_banner -loglevel 0 -show_format -i "${FILE}" | grep bit_rate | sed 's/.*bit_rate=\([0-9]\+\).*/\1/g')

@@ -9,6 +9,38 @@ Switch keyboard layout to English (UK)=none,none,Switch keyboard layout to Engli
 Switch to Next Keyboard Layout=Ctrl+Alt+K,none,Switch to Next Keyboard Layout
 _k_friendly_name=KDE Daemon
 
+[assistant.desktop]
+_k_friendly_name=Qt Assistant
+_launch=none,none,Launch Qt Assistant
+
+[bssh.desktop]
+_k_friendly_name=Avahi SSH Server Browser
+_launch=none,none,Launch Avahi SSH Server Browser
+
+[bvnc.desktop]
+_k_friendly_name=Avahi VNC Server Browser
+_launch=none,none,Launch Avahi VNC Server Browser
+
+[designer.desktop]
+_k_friendly_name=Qt Designer
+_launch=none,none,Launch Qt Designer
+
+[electron.desktop]
+_k_friendly_name=Electron
+_launch=none,none,Launch Electron
+
+[electron4.desktop]
+_k_friendly_name=Electron 4
+_launch=none,none,Launch Electron 4
+
+[electron6.desktop]
+_k_friendly_name=Electron
+_launch=none,none,Launch Electron
+
+[electron7.desktop]
+_k_friendly_name=Electron
+_launch=none,none,Launch Electron
+
 [flameshot.desktop]
 Capture=Print,none,Take screenshot
 Configure=none,none,Configure
@@ -225,6 +257,24 @@ view_actual_size=,Meta+0,Actual Size
 view_zoom_in=Meta+=,Meta+=,Zoom In
 view_zoom_out=Meta+-,Meta+-,Zoom Out
 
+[libreoffice-startcenter.desktop]
+Base=,,Base
+Calc=,,Calc
+Draw=,,Draw
+Impress=,,Impress
+Math=,,Math
+Writer=,,Writer
+_k_friendly_name=LibreOffice
+_launch=none,none,Launch LibreOffice
+
+[linguist.desktop]
+_k_friendly_name=Qt Linguist
+_launch=none,none,Launch Qt Linguist
+
+[lstopo.desktop]
+_k_friendly_name=Hardware Locality lstopo
+_launch=none,none,Launch Hardware Locality lstopo
+
 [mediacontrol]
 _k_friendly_name=Media Controller
 mediavolumedown=none,none,Media volume down
@@ -234,6 +284,10 @@ playpausemedia=Media Play,Media Play,Play/Pause media playback
 previousmedia=Media Previous,Media Previous,Media playback previous
 stopmedia=Media Stop,Media Stop,Stop media playback
 
+[nvim.desktop]
+_k_friendly_name=Neovim
+_launch=none,none,Launch Neovim
+
 [org.kde.dolphin.desktop]
 _k_friendly_name=Dolphin
 _launch=Meta+E,Meta+E,Dolphin
@@ -242,9 +296,21 @@ _launch=Meta+E,Meta+E,Dolphin
 _k_friendly_name=Launch KCalc
 _launch=Launch (1),none,Launch KCalc
 
+[org.kde.kdeconnect_open.desktop]
+_k_friendly_name=Open on connected device via KDE Connect
+_launch=none,none,Launch Open on connected device via KDE Connect
+
+[org.kde.pimdataexporter.desktop]
+_k_friendly_name=PIM Data Exporter
+_launch=none,none,Launch PIM Data Exporter
+
 [org.kde.plasma.emojier.desktop]
 _k_friendly_name=Emoji Selector
 _launch=Meta+.,Meta+.,Emoji Selector
+
+[org.kde.sieveeditor.desktop]
+_k_friendly_name=Sieve Editor
+_launch=none,none,Launch Sieve Editor
 
 [org.kde.spectacle.desktop]
 ActiveWindowScreenShot=Meta+Print,Meta+Print,Capture Active Window
@@ -252,7 +318,7 @@ CurrentMonitorScreenShot=,none,Capture Current Monitor
 FullScreenScreenShot=Shift+Print,Shift+Print,Capture Entire Desktop
 RectangularRegionScreenShot=Meta+Shift+Print,Meta+Shift+Print,Capture Rectangular Region
 _k_friendly_name=Spectacle
-_launch=,Print,Launch Spectacle
+_launch=none,Print,Launch Spectacle
 
 [org_kde_powerdevil]
 Decrease Keyboard Brightness=Keyboard Brightness Down,Keyboard Brightness Down,Decrease Keyboard Brightness
@@ -300,6 +366,46 @@ stop current activity=Meta+S,Meta+S,Stop Current Activity
 switch to next activity=none,none,Switch to Next Activity
 switch to previous activity=none,none,Switch to Previous Activity
 toggle do not disturb=none,none,Toggle do not disturb
+
+[qdbusviewer.desktop]
+_k_friendly_name=Qt QDbusViewer
+_launch=none,none,Launch Qt QDbusViewer
+
+[qv4l2.desktop]
+_k_friendly_name=Qt V4L2 test Utility
+_launch=none,none,Launch Qt V4L2 test Utility
+
+[qvidcap.desktop]
+_k_friendly_name=Qt V4L2 video capture utility
+_launch=none,none,Launch Qt V4L2 video capture utility
+
+[sqlitebrowser.desktop]
+_k_friendly_name=DB Browser for SQLite
+_launch=none,none,Launch DB Browser for SQLite
+
+[stoken-gui-small.desktop]
+_k_friendly_name=Software Token (small)
+_launch=none,none,Launch Software Token (small)
+
+[stoken-gui.desktop]
+_k_friendly_name=Software Token
+_launch=none,none,Launch Software Token
+
+[userfeedbackconsole.desktop]
+_k_friendly_name=UserFeedback Console
+_launch=none,none,Launch UserFeedback Console
+
+[vim.desktop]
+_k_friendly_name=Vim
+_launch=none,none,Launch Vim
+
+[winetricks.desktop]
+_k_friendly_name=Winetricks
+_launch=none,none,Launch Winetricks
+
+[xdvi.desktop]
+_k_friendly_name=XDvi
+_launch=none,none,Launch XDvi
 
 [yakuake]
 _k_friendly_name=Yakuake
