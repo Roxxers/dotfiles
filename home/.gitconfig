@@ -11,6 +11,9 @@
 [mergetool "vscode"]
         cmd = code --wait $MERGED
 
+[include]
+	path = /home/roxie/.config/git/aliases
+
 [commit]
 	gpgsign = true
 [gpg]

@@ -1,17 +1,16 @@
-# Allow aliases to be sudu'd
+# Allow aliases to be sudu'd (literally no idea if this works tbh)
 alias sudo="sudo "
 
 alias ls='ls --color=auto'
 alias lsa="ls -a"
+alias ll="ls -l"
+alias lal="ls -al"
 
 # Easier navigation: .., ..., ...., .....
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
-
-# Better version of cat. Has search and highlighting.
-#alias cat='bat'
 
 # uses fzf to preview files in a menu
 alias preview="fzf --preview 'bat --color \"always\" {}'"
@@ -22,7 +21,7 @@ alias ncdu="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
 # Bind tldr to a better alias for me cause I can never spell it. Conflicts with fish's help but \help exits so doesn't matter
 alias help="tldr"
 
-# Refresh fish (Atm this is a function soon to be depreciated so its just here so I can keep it)
+# Refresh zsh (not very efficient but nice for quick testing)
 alias refresh="clear;zsh"
 
 # Refresh Wal back to the previous colour scheme
