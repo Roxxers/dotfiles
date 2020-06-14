@@ -38,7 +38,7 @@
   unset -m 'POWERLEVEL9K_*'
 
   # Prompt colors.
-  local grey='8'
+  local grey='2'
   local red='1'
   local yellow='3'
   local blue='4'
