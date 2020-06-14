@@ -52,6 +52,8 @@ plugins=(
 	extract
 	golang
 	git
+	gitignore
+	lol
 	node
 	pass
 	pipenv
