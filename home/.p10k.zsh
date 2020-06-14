@@ -38,19 +38,19 @@
   unset -m 'POWERLEVEL9K_*'
 
   # Prompt colors.
-  local grey='242'
+  local grey='8'
   local red='1'
   local yellow='3'
   local blue='4'
   local magenta='5'
   local cyan='6'
-  local white='7'
+  local white='15'
 
   # Left prompt segments.
   typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
     dir                       # current directory
     vcs                       # git status
-    # context                 # user@host
+    context                 # user@host
     # command_execution_time  # previous command duration
     # virtualenv              # python virtual environment
     prompt_char               # prompt symbol
@@ -60,7 +60,7 @@
   typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
     command_execution_time    # previous command duration
     virtualenv                # python virtual environment
-    context                   # user@host
+    #context                   # user@host
     time                      # current time
   )
 
