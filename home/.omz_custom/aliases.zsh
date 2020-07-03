@@ -1,10 +1,13 @@
+
+alias c="code ./"
+
 # Allow aliases to be sudu'd (literally no idea if this works tbh)
 alias sudo="sudo "
 
-alias ls='ls --color=auto'
-alias lsa="ls -a"
-alias ll="ls -l"
-alias lal="ls -al"
+alias ls='ls --color=auto --hyperlink'
+alias la="ls -Ah"
+alias ll="ls -lh"
+alias lla="ls -Alh"
 
 # Easier navigation: .., ..., ...., .....
 alias ..="cd .."

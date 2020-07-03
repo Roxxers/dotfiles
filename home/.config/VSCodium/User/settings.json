@@ -241,6 +241,7 @@
         "siana",
         "socketio",
         "softwareventures",
+        "sprintf",
         "standarderror",
         "strftime",
         "strptime",
@@ -253,6 +254,7 @@
         "vars",
         "venv",
         "vs",
+        "vsprintf",
         "xrange",
         "xreadlines"
     ],
@@ -270,5 +272,31 @@
     "typescript.updateImportsOnFileMove.enabled": "always",
     "latex-workshop.view.pdf.viewer": "tab",
     "workbench.activityBar.visible": true,
+    "sync.gist": "6df5e7ca66102b1bac89c5625ed5f7d0",
+    "gitlens.views.repositories.branches.layout": "list",
+    "gitlens.gitCommands.skipConfirmations": [
+        "fetch:command",
+        "stash-push:command",
+        "switch:command",
+        "branch-create:menu"
+    ],
+    "window.zoomLevel": 0,
     
+    "latex-workshop.latex.recipes": [{
+        "name": "luatex",
+        "tools": [
+          "luatex"
+        ]
+      }],
+      "latex-workshop.latex.tools": [{
+        "name": "luatex",
+        "command": "lualatex",
+        "args": [
+          "--pdf",
+          "--tex-option=\"-interaction=nonstopmode\"",
+          "--tex-option=\"-file-line-error\"",
+          "%DOC_EXT%"
+        ],
+          "env": {}
+      }]
 }

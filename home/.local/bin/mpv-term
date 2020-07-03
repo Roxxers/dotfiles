@@ -1,0 +1,7 @@
+#! /usr/bin/env sh
+
+# mpv-term
+# Play mpv within the current terminal window
+
+win=$(sed -zn < /proc/$$/environ  's/^WINDOWID=\(.*\)/\1/p')
+mpv --wid=$win $@
