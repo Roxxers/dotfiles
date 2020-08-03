@@ -1,0 +1,9 @@
+#! /usr/bin/env sh
+
+# encryptedbluiso
+# Creates an encrypted luks container that can be burned to a bluray. 
+
+fallocate -l 23G enc.iso 
+sudo cryptsetup -y luksFormat enc.iso
+sudo cryptsetup luksOpen enc.iso encVolume 
+sudo mkfs.ext4 /dev/mapper/encVolume 

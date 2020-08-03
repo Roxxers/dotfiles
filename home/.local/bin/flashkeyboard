@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# flashkeyboard
+# takes binary firmware and flashes it to keyboard
+
+sudo echo "Take this 5 second timer to put the keyboard in flash mode"
+ for i in {1..5}; do 
+    echo .
+    sleep 1
+done
+sudo dfu-programmer atmega32u4 erase && \
+sudo dfu-programmer atmega32u4 flash "$1" &&\
+sudo dfu-programmer atmega32u4 reset
