@@ -7,7 +7,7 @@ export SHELL="/usr/bin/zsh";
 export PYTHONIOENCODING='UTF-8';
 # Pipenv config for making venvs in project dir
 export PIPENV_VENV_IN_PROJECT=1
-eval "$(pipenv --completion)"
+#eval "$(pipenv --completion)"
 
 # Change path of Z plugin data file
 export _Z_DATA="$HOME/.config/z"
@@ -32,4 +32,4 @@ export GOPATH=$HOME/Projects/go
 export GO111MODULE=on
 
 # Ruby Stuff
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"

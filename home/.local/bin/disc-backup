@@ -1,0 +1,13 @@
+#! /usr/bin/env bash
+
+read -p "Name of disc: " disc
+
+filename="$disc.iso"
+echo "Coping disc '$disc' to '${disc}.iso'" 
+
+mkdir $HOME/.disctmp
+
+dd if=/dev/sr0 of=$HOME/.disctmp/$filename status=progress
+
+rclone move $HOME/.disctmp b2:scarif-2-archive 
+rm $HOME/.disctmp -r

@@ -50,8 +50,7 @@ convert() {
 		-preset slow \
 		-pix_fmt "${BITDEPTH}" \
 		-rc vbr \
-		-max_muxing_queue_size 1024 \
-		-qp 10 \
+		-qp 20 \
 		-b:v $NEWBITRATE \
 		"${NEWFILENAME}"
 }
