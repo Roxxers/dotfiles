@@ -46,20 +46,20 @@ ZSH_CUSTOM="$HOME/.omz_custom"
 
 # Set plugins
 plugins=(
-	archlinux
-	docker
-	docker-compose
+	#archlinux
+	#docker
+	#docker-compose
 	extract
-	golang
+	#golang
 	git
-	gitignore
-	lol
-	node
+	#gitignore
+	#lol
+	#node
 	pass
-	pipenv
+	#pipenv
 	python
   virtualenvwrapper
-	z
+	#z
 	zsh-completions
 	zsh-autosuggestions
 	zsh-history-substring-search 
