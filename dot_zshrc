@@ -1,0 +1,41 @@
+# History in cache directory:
+HISTSIZE=10000
+SAVEHIST=10000
+HISTFILE=~/.cache/zsh/history
+
+export ZSH="/usr/share/oh-my-zsh" # make this into template
+
+# ZSH settings
+HYPHEN_INSENSITIVE="true"
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
+HIST_STAMPS="yyyy-mm-dd"
+ZSH_CUSTOM="$HOME/.config/zsh"
+DISABLE_AUTO_UPDATE="true"
+
+plugins=(
+	archlinux
+	ansible
+	golang
+	pass
+	zsh-interactive-cd
+	#fzf
+	systemd
+	ssh-agent
+	httpie
+	colorize
+	cp # adds cpv command for using rsync like cp for local dirs
+	direnv
+	extract # adds x command to extract any archive
+	git # git aliases for the cli
+	#git-prompt
+	python
+	virtualenvwrapper
+	ufw
+	zsh-autosuggestions
+	zsh-syntax-highlighting
+	history-substring-search 
+)
+# zsh completions
+autoload -U compinit && compinit
+source $ZSH/oh-my-zsh.sh
+

@@ -1,0 +1,20 @@
+
+[user]
+    name = Roxie Gibson
+    email = me@roxxers.xyz
+    signingKey = 49B0A560F2C05D0A4460B6935D0140EDEE123F4D
+
+[init]
+    templateDir = /home/roxie/.config/git/template/init
+
+[commit]
+    gpgsign = true
+    template = /home/roxie/.config/git/template/commit
+
+[include]
+    path = .config/git/aliases
+
+[tag]
+    forceSignAnnotated = true
+[pull]
+	rebase = true

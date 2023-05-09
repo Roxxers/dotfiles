@@ -1,0 +1,15 @@
+Host gateway-uk-1
+    Hostname 77.68.74.169 
+    Port 22543
+    User roxie
+
+Host lesbos
+    Hostname 192.168.0.4
+    Port 42112
+    User roxie
+
+Host lesbos.boot
+    Hostname 192.168.0.4
+    Port 22
+    User root
+    UserKnownHostsFile ~/.ssh/known_hosts.boot
