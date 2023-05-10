@@ -42,7 +42,7 @@ plugins=(
   tmux
 	virtualenvwrapper
 	ufw
-  zsh-navigatonal
+  zsh-navigational
   zsh-interactive-cd
 	zsh-autosuggestions
 	zsh-syntax-highlighting
