@@ -18,7 +18,7 @@ plugins=(
 	golang
 	pass
 	zsh-interactive-cd
-	#fzf
+	fzf
 	systemd
 	ssh-agent
 	httpie
@@ -27,10 +27,23 @@ plugins=(
 	direnv
 	extract # adds x command to extract any archive
 	git # git aliases for the cli
-	#git-prompt
-	python
+	docker
+  docker-compose
+  frontend-search
+  node
+  nmap
+  npm
+  nvm
+  perms
+  postgres
+  python
+  systemadmin
+  systemd
+  tmux
 	virtualenvwrapper
 	ufw
+  zsh-navigatonal
+  zsh-interactive-cd
 	zsh-autosuggestions
 	zsh-syntax-highlighting
 	history-substring-search 
