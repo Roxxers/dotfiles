@@ -12,6 +12,9 @@ HIST_STAMPS="yyyy-mm-dd"
 ZSH_CUSTOM="$HOME/.config/zsh"
 DISABLE_AUTO_UPDATE="true"
 
+# gpg
+export GPG_TTY=$(tty)
+
 plugins=(
 	archlinux
 	ansible
