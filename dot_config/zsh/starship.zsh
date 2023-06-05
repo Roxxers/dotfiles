@@ -1,6 +1,7 @@
 # Spaceship prompt
-autoload -U promptinit; promptinit
-prompt spaceship
+eval "$(starship init zsh)"
+
+
 SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_PROMPT_SEPARATE_LINE=true
 SPACESHIP_PROMPT_ORDER=(
