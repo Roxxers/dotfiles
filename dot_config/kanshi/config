@@ -1,6 +1,6 @@
 profile Home-Thunderbolt  {
 	output eDP-1 mode 2560x1600 position 0,0 scale 1.2 
-	output "Synaptics Inc Non-PnP 0x0000FD4E" mode 1920x1080 position 2560,0
-	output "Samsung Electric Company S34J55x H4LT303285" mode 3440x1440 position 4480,0
+	output "Synaptics Inc Non-PnP 0x0000FD4E" mode 1920x1080 position 2134,0
+	output "Samsung Electric Company S34J55x H4LT303285" mode 3440x1440 position 4054,0
 }
 
