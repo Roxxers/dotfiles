@@ -22,6 +22,9 @@ set $term kitty
 # on the original workspace that the command was run on.
 set $menu wofi --show drun | xargs swaymsg exec --
 
+exec waybar -c ~/.config/waybar/sway.waybar.conf &
+exec kanshi
+
 # Keyboard config - set to British
 input * {
     xkb_layout "gb"
